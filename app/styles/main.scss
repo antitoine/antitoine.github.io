@@ -1,3 +1,6 @@
+// bower:scss
+// endbower
+
 /** Fonts **/
 
 /* Roboto */
@@ -125,13 +128,26 @@
 
 /** Styles **/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: #eee;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 header {
   text-align: center;
   margin-top: 20vh;
+
+  & .language-selector {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
 
   & img {
     border-radius: 50%;
@@ -153,3 +169,4 @@ header {
     }
   }
 }
+
