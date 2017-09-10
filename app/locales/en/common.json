@@ -1,5 +1,9 @@
 {
   "lang": "en",
   "title": "Antoine Chabert - Computer Engineer",
-  "main": "Hello"
+  "browser-upgrade": "You are using an outdated browser. Please upgrade your browser to improve your experience.",
+  "main": "Hello",
+  "footer": {
+    "copyright": "All rights reserved"
+  }
 }
