@@ -1,9 +1,10 @@
 // i18n initialisation
 (() => {
-  function reloadLang(lng) {
+  function reloadLang() {
     jqueryI18next.init(i18next, $);
     $('html').localize();
-    $('select.language-selector').val(i18next.language);
+    $('.language-list li.active').removeClass('active');
+    $('.language-list li[data-lang=' + i18next.language + ']').addClass('active');
   }
 
   i18next
@@ -11,7 +12,7 @@
     .use(i18nextBrowserLanguageDetector)
     .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     ns: ['common'],
     defaultNS: 'common',
     backend: {
@@ -22,9 +23,20 @@
 
   i18next.on('languageChanged', reloadLang);
 
-  $('select.language-selector').on('change', function () {
-    i18next.changeLanguage(this.value);
+  $('.language-list li').on('click', function () {
+    let list = $('.language-list');
+    if ($(this).hasClass('active')) {
+      if (list.hasClass('open')) {
+        list.removeClass('open');
+      } else {
+        list.addClass('open');
+      }
+    } else {
+      i18next.changeLanguage($(this).data('lang'));
+      list.removeClass('open');
+    }
   });
+
 })();
 
 

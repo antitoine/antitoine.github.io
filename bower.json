@@ -6,7 +6,8 @@
     "i18next": "^9.0.0",
     "jquery-i18next": "^1.2.0",
     "i18next-xhr-backend": "^1.4.2",
-    "i18next-browser-languagedetector": "^2.0.0"
+    "i18next-browser-languagedetector": "^2.0.0",
+    "sass-mq": "^3.3.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",

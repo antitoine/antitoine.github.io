@@ -1,4 +1,5 @@
 // bower:scss
+@import "../../bower_components/sass-mq/mq";
 // endbower
 
 /** Fonts **/
@@ -141,15 +142,57 @@ body {
 
 header {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 5vh;
 
   & .language-selector {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 10px;
+
+    & ul.language-list {
+      text-align: left;
+      background: #fff;
+      padding: 10px;
+      border-radius: 3px;
+      list-style: none;
+
+      & > li {
+        font-size: 0;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        & img {
+          width: 0;
+          vertical-align: middle;
+        }
+
+        &.active {
+          @include mq($from: tablet) {
+            font-size: 1em;
+          }
+
+          & img {
+            width: auto;
+          }
+        }
+      }
+
+      &.open > li {
+        font-size: 1em;
+        margin-bottom: 5px;
+
+        & img {
+          width: auto;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
-  & img {
+  & > img {
     border-radius: 50%;
     border: 5px solid #fff;
   }
