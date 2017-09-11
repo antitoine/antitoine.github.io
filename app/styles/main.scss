@@ -30,6 +30,23 @@ main {
   @include mq($from: wide) {
     width: mq-get-breakpoint-width(wide);
   }
+
+  & section.introduction {
+
+    & h2 {
+      text-align: center;
+      font-weight: 300;
+
+      & a {
+        color: #15507D;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 @import 'footer';
