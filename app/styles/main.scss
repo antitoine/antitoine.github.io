@@ -181,6 +181,16 @@ main {
               visibility: visible;
               transition: height 0.1s, top 0.1s, visibility 0.2s;
             }
+
+            & .content {
+              max-height: 100%;
+              overflow: auto;
+              padding: 5px;
+
+              & .close {
+                margin-top: 5px;
+              }
+            }
           }
         }
       }

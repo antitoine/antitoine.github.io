@@ -4,10 +4,11 @@ $(() => {
 
   // i18n initialisation
   function reloadLang() {
+    let lang = i18next.language.split('-')[0];
     jqueryI18next.init(i18next, $);
     $('html').localize();
     $('.language-list li.active').removeClass('active');
-    $('.language-list li[data-lang=' + i18next.language + ']').addClass('active');
+    $('.language-list li[data-lang=' + lang + ']').addClass('active');
   }
 
   i18next
@@ -15,7 +16,7 @@ $(() => {
     .use(i18nextBrowserLanguageDetector)
     .init({
     fallbackLng: 'en',
-    debug: false,
+    debug: true,
     ns: ['common'],
     defaultNS: 'common',
     backend: {

@@ -9,6 +9,11 @@
       "today": "Today",
       "iut": {
         "title": "University Institute of Technology from Montpellier-Sète"
+      },
+      "tohero": {
+        "website": {
+          "title": "toHero Website"
+        }
       }
     }
   },
