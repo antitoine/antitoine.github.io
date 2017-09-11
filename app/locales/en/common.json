@@ -3,9 +3,10 @@
   "title": "Antoine Chabert - Computer Engineer",
   "main": {
     "introduction": {
-      "title": "Computer Engineer from <a href=\"https://www.insa-lyon.fr/\" title=\"School INSA Lyon website\">INSA Lyon</a> working at <a href=\"https://www.tohero.fr/\" title=\"Enterprise toHero website\">toHero</a>"
+      "title": "Computer Engineer from <a href=\"https://www.insa-lyon.fr/\" title=\"School INSA Lyon website\" target=\"_blank\">INSA Lyon</a> working at <a href=\"https://www.tohero.fr/\" title=\"Enterprise toHero website\" target=\"_blank\">toHero</a>"
     },
     "story": {
+      "today": "Today",
       "iut": {
         "title": "University Institute of Technology from Montpellier-Sète"
       }

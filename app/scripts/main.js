@@ -46,20 +46,37 @@ $(() => {
     loop: true,
     margin: 10,
     stagePadding: 50,
+    nav: true,
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
     responsiveClass: true,
-    responsive:{
-      0:{
-        items:1,
-        nav:true
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 5,
+        nav: false,
       },
-      600:{
-        items:2,
-        nav:false
+      480: {
+        items: 2,
+        stagePadding: 5,
+        nav: false,
       },
-      1000:{
-        items:4,
-        nav:true,
-        loop:false
+      550: {
+        items: 2,
+        stagePadding: 20,
+        nav: false,
+      },
+      740: {
+        items: 2,
+        stagePadding: 20,
+      },
+      1000: {
+        items: 3
+      },
+      1300: {
+        items: 4
       }
     }
   })
