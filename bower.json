@@ -7,10 +7,21 @@
     "jquery-i18next": "^1.2.0",
     "i18next-xhr-backend": "^1.4.2",
     "i18next-browser-languagedetector": "^2.0.0",
-    "sass-mq": "^3.3.2"
+    "sass-mq": "^3.3.2",
+    "font-awesome": "font-awsome#^4.7.0",
+    "owl.carousel": "^2.2.1",
+    "object-fit-images": "*"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^3.5.1"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    }
   }
 }

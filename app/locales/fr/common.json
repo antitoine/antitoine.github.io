@@ -4,6 +4,11 @@
   "main": {
     "introduction": {
       "title": "Ingénieur en informatique de l'<a href=\"https://www.insa-lyon.fr/\" title=\"Site web de l'école INSA Lyon\">INSA Lyon</a> travaillant chez <a href=\"https://www.tohero.fr/\" title=\"Site web de l'entreprise toHero\">toHero</a>"
+    },
+    "story": {
+      "iut": {
+        "title": "Institut Universitaire de Technologie de Montpellier-Sète"
+      }
     }
   },
   "header": {

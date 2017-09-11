@@ -1,5 +1,8 @@
-// i18n initialisation
-(() => {
+$(() => {
+  // Polyfill object-fit/object-position
+  objectFitImages();
+
+  // i18n initialisation
   function reloadLang() {
     jqueryI18next.init(i18next, $);
     $('html').localize();
@@ -37,7 +40,31 @@
     }
   });
 
-})();
+  // Carousel
+  $('.owl-carousel').owlCarousel({
+    lazyLoad: true,
+    loop: true,
+    margin: 10,
+    stagePadding: 50,
+    responsiveClass: true,
+    responsive:{
+      0:{
+        items:1,
+        nav:true
+      },
+      600:{
+        items:2,
+        nav:false
+      },
+      1000:{
+        items:4,
+        nav:true,
+        loop:false
+      }
+    }
+  })
+});
+
 
 
 
