@@ -97,7 +97,11 @@ $(() => {
     }
   });
 
-  $('.background-lazy').Lazy();
+  $('.background-lazy').Lazy({
+    effect: 'fadeIn',
+    effectTime: 2000,
+    threshold: 0
+  });
 });
 
 
