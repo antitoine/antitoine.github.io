@@ -1,3 +1,4 @@
+@import '../../bower_components/sass-mq/mq';
 @import 'fonts';
 
 body {
@@ -6,23 +7,29 @@ body {
   padding: 0;
 }
 
-.browser-upgrade {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-}
-
 @import 'header';
 
 main {
   min-height: 50vh;
-  margin-top: 25px;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 10px 25px;
+
+  @include mq($until: tablet) {
+    width: 100%;
+    padding: 10px;
+  }
+
+  @include mq($from: tablet, $until: desktop) {
+    width: mq-get-breakpoint-width(tablet);
+  }
+
+  @include mq($from: desktop, $until: wide) {
+    width: mq-get-breakpoint-width(desktop);
+  }
+
+  @include mq($from: wide) {
+    width: mq-get-breakpoint-width(wide);
+  }
 }
 
-footer {
-  margin: 20px 0;
-  font-weight: 100;
-  text-align: center;
-}
+@import 'footer';

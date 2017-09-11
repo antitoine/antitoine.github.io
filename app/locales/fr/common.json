@@ -1,8 +1,13 @@
 {
   "lang": "fr",
   "title": "Antoine Chabert - Ingénieur en informatique",
-  "browser-upgrade": "Vous utilisez un ancien navigateur internet. Merci d'utiliser un navigateur à jour afin d'améliorer votre expérience.",
   "main": "Bonjour",
+  "header": {
+    "browser-upgrade": "Vous utilisez un ancien navigateur internet. Merci d'utiliser un navigateur à jour afin d'améliorer votre expérience.",
+    "picture": {
+      "title": "Photo de profil d'Antoine Chabert"
+    }
+  },
   "footer": {
     "copyright": "Tous droits réservés"
   }

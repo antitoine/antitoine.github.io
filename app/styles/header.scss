@@ -2,9 +2,16 @@
 
 header {
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 20px;
   background: #eee;
   box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  margin-bottom: 30px;
+
+  & .browser-upgrade {
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
 
   & .language-selector {
     position: absolute;
@@ -17,6 +24,7 @@ header {
       padding: 10px;
       border-radius: 3px;
       list-style: none;
+      box-shadow: 0 1px 4px rgba(0,0,0,.3);
 
       & > li {
         font-size: 0;
@@ -61,18 +69,19 @@ header {
   }
 
   & .title {
-    margin-top: 30px;
-    height: 24px;
 
     & h1 {
       font-family: 'Pinyon Script', serif;
       font-weight: 300;
       font-style: normal;
-      display: inline;
+      font-size: 2.5em;
+      display: inline-block;
+      min-width: 260px;
+      min-height: 40px;
       background: #fff;
+      margin: 20px 0;
       padding: 10px 20px;
       border-radius: 5px;
-      min-width: 260px;
       box-shadow: 0 1px 4px rgba(0,0,0,.3);
     }
   }
