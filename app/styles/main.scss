@@ -30,7 +30,7 @@ main {
   padding: 10px 25px;
 
   @include mq($until: tablet) {
-    width: 100%;
+    width: auto;
     padding: 10px;
   }
 
