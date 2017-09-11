@@ -40,10 +40,10 @@ $(() => {
     }
   });
 
-  // Carousel
+  // Main carousel
   $('.owl-carousel').owlCarousel({
     lazyLoad: true,
-    loop: true,
+    loop: false,
     margin: 10,
     stagePadding: 50,
     nav: true,
@@ -78,6 +78,21 @@ $(() => {
       1300: {
         items: 4
       }
+    }
+  });
+
+  $('.owl-carousel .item').on('click', function() {
+    let info = $(this).find('.info');
+    if (info.hasClass('open')) {
+      info.removeClass('open');
+    } else {
+      info.addClass('open');
+    }
+  });
+
+  $('.owl-carousel .item').each(function() {
+    if ($(this).find('.info').length > 0) {
+      $(this).css('cursor', 'pointer');
     }
   })
 });

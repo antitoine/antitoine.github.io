@@ -77,10 +77,10 @@ main {
 
       & .carousel {
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        background: #eee;
 
         & .owl-stage {
           padding: 20px 50px;
-          background: #eee;
         }
 
         & .owl-nav {
@@ -160,6 +160,26 @@ main {
             & h3 {
               font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
               font-weight: 300;
+            }
+          }
+
+          & .info {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
+            top: 100%;
+            height: 0;
+            visibility: hidden;
+            transition: height 0.2s, top 0.2s, visibility 0.1s;
+            cursor: pointer;
+
+            &.open {
+              top: 0;
+              height: 100%;
+              visibility: visible;
+              transition: height 0.1s, top 0.1s, visibility 0.2s;
             }
           }
         }
