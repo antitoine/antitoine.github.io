@@ -82,9 +82,9 @@ $(() => {
     }
   });
 
-  $('.owl-carousel .item').on('click', function() {
+  $('.owl-carousel .item').on('click', function(event) {
     let info = $(this).find('.info');
-    if (info.hasClass('open')) {
+    if (info.hasClass('open') && !$(event.target).is('a, a *')) {
       info.removeClass('open');
     } else {
       info.addClass('open');
