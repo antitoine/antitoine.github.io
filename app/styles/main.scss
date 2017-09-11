@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@ main {
     &.introduction {
 
       & h2 {
-        font-weight: 300;
+        font-weight: normal;
       }
 
       & .social {
@@ -133,25 +133,26 @@ main {
 
           & h3 {
             font-size: 1.1em;
-            font-weight: 400;
-            min-height: 60px;
+            font-weight: normal;
+            min-height: 80px;
           }
 
           & h4 {
-            font-weight: 300;
+            font-size: 0.9em;
+            font-weight: normal;
           }
 
           &.epfl {
             & h3 {
               font-family: 'Trajan', Times, sans-serif;
-              font-weight: 300;
+              font-weight: normal;
             }
           }
 
           &.insa {
             & h3 {
               font-family: 'Archivo Narrow', Tahoma, sans-serif;
-              font-weight: 300;
+              font-weight: normal;
               text-transform: uppercase;
             }
           }
@@ -159,7 +160,7 @@ main {
           &.iut {
             & h3 {
               font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
-              font-weight: 300;
+              font-weight: normal;
             }
           }
 
