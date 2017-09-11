@@ -95,7 +95,9 @@ $(() => {
     if ($(this).find('.info').length > 0) {
       $(this).css('cursor', 'pointer');
     }
-  })
+  });
+
+  $('.background-lazy').Lazy();
 });
 
 

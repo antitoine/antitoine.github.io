@@ -26,7 +26,7 @@
   </head>
   <body>
 
-    <header>
+    <header class="background-lazy" data-src="images/epfl-picture.jpg">
       <!--[if IE]>
       <p class="browser-upgrade" data-i18n="header.browser-upgrade">
         You are using an outdated browser. Please upgrade your browser to improve your experience.
@@ -46,7 +46,7 @@
         </ul>
       </div>
 
-      <img src="images/profile-picture-scare.png" width="260" height="260" data-i18n="[title]header.picture.title" alt="Antoine Chabert" title="Antoine Chabert profile picture">
+      <img class="profile" src="images/profile-picture-scare.png" width="260" height="260" data-i18n="[title]header.profile.title" alt="Antoine Chabert" title="Antoine Chabert profile picture">
       <div class="title">
         <h1>Antoine Chabert</h1>
       </div>
@@ -209,6 +209,7 @@
     <script src="/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
     <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <script src="/bower_components/object-fit-images/dist/ofi.browser.js"></script>
+    <script src="/bower_components/jquery-lazy/jquery.lazy.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
