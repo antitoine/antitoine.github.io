@@ -83,11 +83,14 @@ $(() => {
   });
 
   $('.owl-carousel .item').on('click', function(event) {
-    let info = $(this).find('.info');
-    if (info.hasClass('open') && !$(event.target).is('a, a *')) {
-      info.removeClass('open');
-    } else {
-      info.addClass('open');
+    if (!$(event.target).is('a, a *')) {
+      event.preventDefault();
+      let info = $(this).find('.info');
+      if (info.hasClass('open')) {
+        info.removeClass('open');
+      } else {
+        info.addClass('open');
+      }
     }
   });
 
