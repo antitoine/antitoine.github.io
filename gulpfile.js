@@ -6,6 +6,7 @@ const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const ghPages = require('gulp-gh-pages');
 const jsonminify = require('gulp-jsonminify');
+const webp = require('gulp-webp');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -72,9 +73,15 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('images', () => {
+gulp.task('images', ['images:webp'], () => {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin()))
+    .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('images:webp', () => {
+  return gulp.src('app/images/**/*')
+    .pipe(webp())
     .pipe(gulp.dest('dist/images'));
 });
 

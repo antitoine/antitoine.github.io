@@ -4,10 +4,30 @@
 header {
   text-align: center;
   padding-top: 20px;
-  background: #eee center center no-repeat;
-  background-size: cover;
+  background: #eee;
   box-shadow: 0 1px 4px #888;
   margin-bottom: 30px;
+  position: relative;
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  & > picture.background {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      @include object-fit(cover);
+    }
+  }
 
   & .browser-upgrade {
     margin: 0 auto 20px auto;
@@ -70,7 +90,7 @@ header {
     }
   }
 
-  & > img.profile {
+  & img.profile {
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 1px 4px #888;
