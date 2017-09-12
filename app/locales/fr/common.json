@@ -3,7 +3,7 @@
   "title": "Antoine Chabert - Ingénieur en informatique",
   "main": {
     "introduction": {
-      "title": "Ingénieur en informatique de l'<a href=\"https://www.insa-lyon.fr/\" title=\"Site web de l'école INSA Lyon\">INSA Lyon</a> travaillant chez <a href=\"https://www.tohero.fr/\" title=\"Site web de l'entreprise toHero\">toHero</a>"
+      "title": "Ingénieur en informatique de l'<a href=\"https://www.insa-lyon.fr/\" title=\"Site web de l'école INSA Lyon\" target=\"_blank\">INSA Lyon</a> travaillant chez <a href=\"https://www.tohero.fr/\" title=\"Site web de l'entreprise toHero\" target=\"_blank\">toHero</a>"
     },
     "story": {
       "today": "Aujourd'hui",
