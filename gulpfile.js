@@ -99,7 +99,7 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp', 'dist', '.publish']));
 
 gulp.task('serve', () => {
   runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
