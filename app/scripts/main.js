@@ -103,7 +103,7 @@ $(() => {
   // Header background lazy load
   $('.background-lazy').Lazy({
     effect: 'fadeIn',
-    effectTime: 2000,
+    effectTime: 1000,
     threshold: 0
   });
 });
