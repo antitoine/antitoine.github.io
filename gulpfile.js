@@ -82,7 +82,7 @@ gulp.task('images', ['images:webp'], () => {
 gulp.task('images:webp', () => {
   return gulp.src('app/images/**/*')
     .pipe(webp())
-    .pipe(gulp.dest('dist/images'));
+    .pipe($.if(dev, gulp.dest('.tmp/images'), gulp.dest('dist/images')));
 });
 
 gulp.task('fonts', () => {
@@ -94,7 +94,7 @@ gulp.task('fonts', () => {
 gulp.task('locales', () => {
   return gulp.src(['app/locales/**/*.json'])
     .pipe(jsonminify())
-    .pipe(gulp.dest('dist/locales'));
+    .pipe($.if(dev, gulp.dest('.tmp/locales'), gulp.dest('dist/locales')));
 });
 
 gulp.task('extras', () => {
@@ -109,7 +109,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist', '.publish']));
 
 gulp.task('serve', () => {
-  runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
+  runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts', 'locales', 'images:webp'], () => {
     browserSync.init({
       notify: false,
       port: 9000,
@@ -124,12 +124,14 @@ gulp.task('serve', () => {
     gulp.watch([
       'app/*.html',
       'app/images/**/*',
+      '.tmp/locales/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
+    gulp.watch('app/locales/**/*', ['locales']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
   });
 });
