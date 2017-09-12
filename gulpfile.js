@@ -5,6 +5,7 @@ const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const ghPages = require('gulp-gh-pages');
+const jsonminify = require('gulp-jsonminify');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -84,11 +85,9 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('locales', () => {
-  return gulp.src([
-    'app/locales/**'
-  ], {
-    dot: true
-  }).pipe(gulp.dest('dist/locales'));
+  return gulp.src(['app/locales/**/*.json'])
+    .pipe(jsonminify())
+    .pipe(gulp.dest('dist/locales'));
 });
 
 gulp.task('extras', () => {
