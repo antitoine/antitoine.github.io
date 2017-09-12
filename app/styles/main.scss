@@ -137,13 +137,8 @@ main {
             min-height: 80px;
           }
 
-          & h4 {
-            font-size: 1.1em;
-            font-weight: normal;
-          }
-
-          & h5 {
-            font-size: 1em;
+          & h4, & h5 {
+            font-size: 0.9em;
             font-weight: normal;
           }
 
@@ -167,13 +162,12 @@ main {
             }
 
             & .content {
-              max-height: 94%;
-              margin: 3% 0;
+              max-height: 90%;
+              margin: 5% 0;
               overflow: auto;
-
-              & h5 {
-                font-weight: 400;
-              }
+              position: relative;
+              padding: 5px;
+              font-size: 0.9em;
 
               & .close {
                 margin-top: 5px;
