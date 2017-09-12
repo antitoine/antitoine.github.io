@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Antoine CHABERT -- Developer and maintainer -- @Antoine_Chab
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
