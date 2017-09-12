@@ -16,7 +16,7 @@ $(() => {
     .use(i18nextBrowserLanguageDetector)
     .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     ns: ['common'],
     defaultNS: 'common',
     backend: {
@@ -97,6 +97,7 @@ $(() => {
     }
   });
 
+  // Header background lazy load
   $('.background-lazy').Lazy({
     effect: 'fadeIn',
     effectTime: 2000,

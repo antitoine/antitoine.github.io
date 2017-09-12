@@ -7,19 +7,89 @@
     },
     "story": {
       "today": "Today",
-      "iut": {
-        "title": "University Institute of Technology from Montpellier-Sète"
-      },
       "tohero": {
         "website": {
           "title": "toHero Website"
+        },
+        "info": {
+          "title": "Research & Development Lead",
+          "description": "Main maintainer of chainhero.io and our blockchain products. Support the internal improvement of the enterprise and help with web development."
         }
-      }
+      },
+      "chainhero": {
+        "website": {
+          "title": "chainHero Website"
+        }
+      },
+      "epfl": {
+        "website": {
+          "title": "EPFL Website"
+        },
+        "info": {
+          "title": "Academic exchange",
+          "description": "Succeed my exchange to the prestigious École Polytechnique Fédérale de Lausanne (EPFL) in the fall semester (2016 - 2017):"
+        },
+        "classes": {
+          "ada": "Applied Data Analysis",
+          "ca": "Concurrent Algorithms",
+          "da": "Distributed Algorithms",
+          "qip": "Quantum information processing",
+          "rtc": "Real-time computing",
+          "atin": "Advanced TCP/IP network"
+        }
+      },
+      "worldline": {
+        "website": {
+          "title": "Worldline Website"
+        },
+        "info": {
+          "title": "Applications maintainer",
+          "description": "Maintainer of web applications for telephony services."
+        }
+      },
+      "etic": {
+        "website": {
+          "title": "ETIC INSA Technologies Website"
+        },
+        "info": {
+          "title": "Business Manager",
+          "description": "Participate to the Junior Enterprise of INSA Lyon and take the lead on multiple projects between the client and the skilled workers."
+        }
+      },
+      "insa": {
+        "website": {
+          "title": "INSA Lyon Website"
+        },
+        "info": {
+          "title": "Computer Engineer",
+          "description": "Succeed my engineer degree to the Institut National des Sciences Appliquées (INSA) of Lyon, specialized in computer sciences."
+        }
+      },
+      "smile": {
+        "website": {
+          "title": "Smile Website"
+        },
+        "info": {
+          "title": "Web Developer",
+          "description": "Maintainer and developer of web applications."
+        }
+      },
+      "iut": {
+        "title": "University Institute of Technology of Montpellier-Sète",
+        "website": {
+          "title": "IUT Montpellier-Sète Website"
+        },
+        "info": {
+          "title": "Computer Technician",
+          "description": "Succeed my Technician degree to the University Institute of Technology of Montpellier-Sète of Lyon, specialized in computer sciences."
+        }
+      },
+      "more": "To get more information about my story, projects, formations... checkout my resume on"
     }
   },
   "header": {
     "browser-upgrade": "You are using an outdated browser. Please upgrade your browser to improve your experience.",
-    "picture": {
+    "profile": {
       "title": "Antoine Chabert profile picture"
     }
   },
