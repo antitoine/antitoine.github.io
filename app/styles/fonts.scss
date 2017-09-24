@@ -6,20 +6,21 @@
   url('../fonts/roboto/roboto-regular.woff2') format('woff2'),
   url('../fonts/roboto/roboto-regular.woff') format('woff'),
   url('../fonts/roboto/roboto-regular.ttf') format('truetype'),
-  url('../fonts/roboto/roboto-regular.svg#robotoregular') format('svg');
+  url('../fonts/roboto/roboto-regular.svg#roboto-regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-/* Pinyon Script */
+/* Roboto Slab */
 @font-face {
-  font-family: 'Pinyon Script';
-  src: url('../fonts/pinyon-script/pinyon-script-regular.eot');
-  src: url('../fonts/pinyon-script/pinyon-script-regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/pinyon-script/pinyon-script-regular.woff2') format('woff2'),
-    url('../fonts/pinyon-script/pinyon-script-regular.woff') format('woff'),
-    url('../fonts/pinyon-script/pinyon-script-regular.ttf') format('truetype'),
-    url('../fonts/pinyon-script/pinyon-script-regular.svg#pinyon_scriptregular') format('svg');
+  font-family: 'Roboto Slab';
+  src: url('../fonts/roboto-slab/roboto-slab-regular.eot');
+  src: url('../fonts/roboto-slab/roboto-slab-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto-slab/roboto-slab-regular.woff2') format('woff2'),
+  url('../fonts/roboto-slab/roboto-slab-regular.woff') format('woff'),
+  url('../fonts/roboto-slab/roboto-slab-regular.ttf') format('truetype'),
+  url('../fonts/roboto-slab/roboto-slab-regular.svg#roboto-slab-regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
